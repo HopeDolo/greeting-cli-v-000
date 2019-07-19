@@ -25,7 +25,7 @@ describe './lib/greeting.rb' do
 
       output = capture_puts{ greeting("Sally") }
 
-      expect(output).to eq("Hello Sally. It's nice to meet you.")
+      expect(output.strip).to eq("Hello Sally. It's nice to meet you.")
     end
   end
 end
